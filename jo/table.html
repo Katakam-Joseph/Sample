@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #0074D9;
+            color: white;
+        }
+        .total {
+            background-color: #FFA07A;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Monthly Expenses Table</h2>
+    <a href="form.html"><button>Go Back to Form</button></a>
+    
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>June</th>
+            <th>July</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+            <th>Jan</th>
+        </tr>
+        <tr>
+            <td>Rent</td>
+            <td id="rent_Feb"></td>
+            <td id="rent_Mar"></td>
+            <td id="rent_Apr"></td>
+            <td id="rent_May"></td>
+            <td id="rent_June"></td>
+            <td id="rent_July"></td>
+            <td id="rent_Aug"></td>
+            <td id="rent_Sep"></td>
+            <td id="rent_Oct"></td>
+            <td id="rent_Nov"></td>
+            <td id="rent_Dec"></td>
+            <td id="rent_Jan"></td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td id="food_Feb"></td>
+            <td id="food_Mar"></td>
+            <td id="food_Apr"></td>
+            <td id="food_May"></td>
+            <td id="food_June"></td>
+            <td id="food_July"></td>
+            <td id="food_Aug"></td>
+            <td id="food_Sep"></td>
+            <td id="food_Oct"></td>
+            <td id="food_Nov"></td>
+            <td id="food_Dec"></td>
+            <td id="food_Jan"></td>
+        </tr>
+        <tr>
+            <td>Travel</td>
+            <td id="travel_Feb"></td>
+            <td id="travel_Mar"></td>
+            <td id="travel_Apr"></td>
+            <td id="travel_May"></td>
+            <td id="travel_June"></td>
+            <td id="travel_July"></td>
+            <td id="travel_Aug"></td>
+            <td id="travel_Sep"></td>
+            <td id="travel_Oct"></td>
+            <td id="travel_Nov"></td>
+            <td id="travel_Dec"></td>
+            <td id="travel_Jan"></td>
+        </tr>
+        <tr>
+            <td>Others</td>
+            <td id="others_Feb"></td>
+            <td id="others_Mar"></td>
+            <td id="others_Apr"></td>
+            <td id="others_May"></td>
+            <td id="others_June"></td>
+            <td id="others_July"></td>
+            <td id="others_Aug"></td>
+            <td id="others_Sep"></td>
+            <td id="others_Oct"></td>
+            <td id="others_Nov"></td>
+            <td id="others_Dec"></td>
+            <td id="others_Jan"></td>
+        </tr>
+        <tr class="total">
+            <td>Total</td>
+            <td id="total_Feb"></td>
+            <td id="total_Mar"></td>
+            <td id="total_Apr"></td>
+            <td id="total_May"></td>
+            <td id="total_June"></td>
+            <td id="total_July"></td>
+            <td id="total_Aug"></td>
+            <td id="total_Sep"></td>
+            <td id="total_Oct"></td>
+            <td id="total_Nov"></td>
+            <td id="total_Dec"></td>
+            <td id="total_Jan"></td>
+        </tr>
+    </table>
+
+    <script>
+        function loadData() {
+            let expenses = JSON.parse(localStorage.getItem("expenses")) || {};
+            for (let month in expenses) {
+                document.getElementById("rent_" + month).innerText = expenses[month].rent;
+                document.getElementById("food_" + month).innerText = expenses[month].food;
+                document.getElementById("travel_" + month).innerText = expenses[month].travel;
+                document.getElementById("others_" + month).innerText = expenses[month].others;
+                document.getElementById("total_" + month).innerText = expenses[month].total;
+            }
+        }
+        window.onload = loadData;
+    </script>
+
+</body>
+</html>
