@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We provide professional and creative services to capture your special moments with a unique artistic touch.">
+    <meta name="keywords" content="PixelPoetries Photography, pixelpoetries, pixelpoetriesphotography,pixel poetries, pixel poetries photography, pixel poetries photography vijayawada, photo shoots, wedding photography, cinematic photography, Vijayawada photography, professional photo services">
+    <meta name="author" content="pixelpoetries photography">
+    <title>pixelpoetries</title>
+    <meta property="og:title" content="PixelPoetries Photography - Capturing Your Special Moments">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PixelPoetries Photography">
+    <meta property="og:url" content="https://www.pixelpoetriesphotography.com/">
+    <meta property="og:description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We offer creative and professional services to make your moments memorable.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+<style>
+.navs {
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.bg-primary {
+  background-color: white;
+  color: black;
+}
+
+.bg-secondary {
+  background-color: white;
+  color: black;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav>
+    <div class="con">
+        <div class="con1">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="100px" width="100px"></a>
+        </div>
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="gallery.html" class="dropdown-toggle">
+                    Gallery
+                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="bridal.html">Bridal Portraits</a></li>
+                    <li><a href="#">Couple Portraits</a></li>
+                    <li><a href="#">Groom Portraits</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book_us.html">Book Us</a></li>
+        </ul>
+    </div>
+</nav>    
+
+
+<div class="navs">
+    <div class="flex space-x-4 overflow-x-auto">
+        <ul class="list-none flex gap-4">
+            <li><a href="all.html" class="bg-primary text-primary-foreground px-4 py-2 rounded-lg block">All</a></li>
+            <li><a href="bridal.html" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg block">Bridal Portraits</a></li>
+            <li><a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg block">Couple Portraits</a></li>
+            <li><a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg block">Groom Portraits</a></li>
+            <li><a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg block">Jewellery</a></li>
+            <li><a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg block">Rituals</a></li>
+            <li><a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg block">Candid Moments</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="imgs/1/01.jpg" alt="Gallery Image 1" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/1/02.jpg" alt="Gallery Image 2" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/1/03.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/1/04.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/1/05.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/1/06.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/2/01.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/2/02.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/2/03.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/2/04.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/2/05.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/2/06.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/4/01.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/4/02.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/4/03.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/4/04.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/4/05.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/4/06.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/4/07.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/7/21.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/22.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/23.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/24.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/25.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/26.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/27.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/28.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/29.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/30.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/31.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/32.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/33.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/34.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/35.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/36.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/37.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/38.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/39.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <div class="gallery-item">
+        <img src="imgs/7/40.jpg" alt="Gallery Image 3" onclick="openModal(this)" />
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+  
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content-wrapper">
+          <img class="modal-content" id="modalImage" />
+      </div>
+  </div>
+
+  <!-- Modal for viewing image -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <div class="modal-content-wrapper">
+      <img id="modalImage" class="modal-content" src="" alt="Image"/>
+  </div>
+</div>
+
+  </section>
+
+<section class="book-us">
+    <div class="containerss">
+        <div class="text-content">
+            <h2>BOOK US NOW</h2>
+            <p>Get in touch with us and let us make your special day an event of your lifetime using our digital eye.</p>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+91846400236" class="phone-number">+918464000236</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class=" p-4 text-center text-white">
+        <div class="footer-links">
+            <div class="footer-links1"> 
+                <h3 class="text-white font-bold mb-2">Quick Links</h3>
+                <ul class="text-white ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book_us.html">Book Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links2">
+                <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+                <p class="text-white">Where every pixel tells a poetic tale</p>
+                <p class="text-white"><b>Founder :</b>Pradeep Ganta</p>
+                <p class="text-white"><b>Address:</b> vijayawada, AP, India.</p>
+                <p class="text-white"><b>Email:</b>ganta.pixels@gmail.com</p>
+            </div>
+            <div class="footer-links1">
+                <h3 class="text-white font-bold mb-2">Social Links</h3>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/pixelpoetries_photography" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links3">
+            <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+            <p class="text-sm">used for visting our site and book now.</p>
+        </div>
+        <div id="copyright">
+            <p>&copy; Pixelpoetries. All rights reserved.</p>
+            <p style="font-size:12px;">Design & Developed by KDR Technologies</p>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/918464000236" class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+     <!-- Instagram Icon -->
+   <a href="https://www.instagram.com/pixelpoetries_photography" class="instagram-icon" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+  </a>
+
+  
+    <script>
+
+function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+
+        function enquiry(){
+            window.location.href='bridal.html';
+        }
+
+        // Open modal and show image
+function openModal(image) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    
+    // Show modal
+    modal.classList.add('show');
+    
+    // Set the source of the modal image to match the clicked image
+    modalImage.src = image.src;
+    modalImage.style.transform = 'scale(1)'; // Reset zoom to default
+}
+
+// Close modal
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.remove('show');
+}
+
+// Toggle zoom on the image
+document.getElementById('modalImage').addEventListener('click', function() {
+    this.classList.toggle('zoomed'); // Toggle zoom effect
+});
+
+
+
+
+// Ensure gallery items are visible on load
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    galleryItems.forEach((item) => {
+        item.classList.add("visible"); // Add the 'visible' class on load
+    });
+});
+
+// Scroll Animation with zoom-out effect
+window.addEventListener("scroll", () => {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const triggerPoint = window.innerHeight * 0.8;
+
+    galleryItems.forEach((item) => {
+        const itemTop = item.getBoundingClientRect().top;
+
+        if (itemTop < triggerPoint) {
+            item.classList.add("visible");
+        } else {
+            item.classList.remove("visible"); // Optionally remove class when scrolling back up
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>

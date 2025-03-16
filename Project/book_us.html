@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We provide professional and creative services to capture your special moments with a unique artistic touch.">
+    <meta name="keywords" content="PixelPoetries Photography, pixelpoetries, pixelpoetriesphotography,pixel poetries, pixel poetries photography, pixel poetries photography vijayawada, photo shoots, wedding photography, cinematic photography, Vijayawada photography, professional photo services">
+    <meta name="author" content="pixelpoetries photography">
+    <title>pixelpoetries</title>
+    <meta property="og:title" content="PixelPoetries Photography - Capturing Your Special Moments">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PixelPoetries Photography">
+    <meta property="og:url" content="https://www.pixelpoetriesphotography.com/">
+    <meta property="og:description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We offer creative and professional services to make your moments memorable.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .bo {
+         text-align: justify;
+         margin-bottom: 20px;
+        }
+
+        .bo h2 {
+          font-size: 24px;
+          color: #525252;
+          margin: 0;
+          font-weight: bold;
+          padding-top: 50px;
+          padding-left: 30px;
+        }
+
+        .bo1 {
+            text-align: justify;
+            color: #8a8a8a;
+            font-family: "Metropolis",Sans-serif;
+            font-weight: 400;
+            border :3s;
+            padding: 2rem;
+        }
+       .form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 1rem;
+            background-color: #f3f3f3;
+            border-color: rgba(167, 167, 167, .06);
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #272a2e;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: #525252;
+            font-family: "Metropolis",Sans-serif;
+            font-size: 18px;
+            line-height: 40px;
+
+        }
+
+        .form-group {
+            flex: 1 1 calc(50% - 15px);
+            margin-bottom: 15px;
+            color: #525252;
+            font-family: "Metropolis",Sans-serif;
+            font-size: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff4081;
+            box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #e0356d;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+            }
+
+            .form-group {
+                flex: 1 1 100%;
+            }
+
+            .form-container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                font-size: 13px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<!-- Navbar -->
+<nav>
+    <div class="con">
+        <div class="con1">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="100px" width="100px"></a>
+        </div>
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="gallery.html" class="dropdown-toggle">
+                    Gallery
+                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="bridal.html">Bridal Portraits</a></li>
+                    <li><a href="#">Couple Portraits</a></li>
+                    <li><a href="#">Groom Portraits</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book_us.html">Book Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="bo">
+    <h2>PixelPoetries Photography</h2>
+    <h2>Book Our Services</h2>
+</div>
+
+<div class="bo1">
+    <p>
+         Let us be the people who sketch the outline and fill in the colors
+         for the beautiful picture of your love story on your wedding day.
+         Forget all the hassle of getting things coordinated, we are here to make you
+         look flawless on your special day with our wedding photography services.
+    </p>
+</div>
+
+<div class="form-container">
+    <form action="/reserve" method="POST">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Bride/Groom Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter city">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="event">Select Event</label>
+                <select id="event" name="event">
+                    <option value="">Select One</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="engagement">Engagement</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+            </div>
+
+            <div class="form-group">
+                <label for="venue">Venue</label>
+                <input type="text" id="venue" name="venue" placeholder="Enter venue">
+            </div>
+        </div>
+
+        
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+<section class="book-us">
+    <div class="containerss">
+        <div class="text-content">
+            <h2>BOOK US NOW</h2>
+            <p>Get in touch with us and let us make your special day an event of your lifetime using our digital eye.</p>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+91846400236" class="phone-number">+918464000236</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class=" p-4 text-center text-white">
+        <div class="footer-links">
+            <div class="footer-links1"> 
+                <h3 class="text-white font-bold mb-2">Quick Links</h3>
+                <ul class="text-white ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book_us.html">Book Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links2">
+                <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+                <p class="text-white">Where every pixel tells a poetic tale</p>
+                <p class="text-white"><b>Founder :</b>Pradeep Ganta</p>
+                <p class="text-white"><b>Address:</b> vijayawada, AP, India.</p>
+                <p class="text-white"><b>Email:</b>ganta.pixels@gmail.com</p>
+            </div>
+            <div class="footer-links1">
+                <h3 class="text-white font-bold mb-2">Social Links</h3>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/pixelpoetries_photography" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links3">
+            <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+            <p class="text-sm">used for visting our site and book now.</p>
+        </div>
+        <div id="copyright">
+            <p>&copy; Pixelpoetries. All rights reserved.</p>
+            <p style="font-size:12px;">Design & Developed by KDR Technologies</p>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/918464000236" class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+     <!-- Instagram Icon -->
+   <a href="https://www.instagram.com/pixelpoetries_photography" class="instagram-icon" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+  </a>
+
+
+
+<script>
+    function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+</script>
+
+
+</body>
+</html>

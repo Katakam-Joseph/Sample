@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We provide professional and creative services to capture your special moments with a unique artistic touch.">
+    <meta name="keywords" content="PixelPoetries Photography, pixelpoetries, pixelpoetriesphotography,pixel poetries, pixel poetries photography, pixel poetries photography vijayawada, photo shoots, wedding photography, cinematic photography, Vijayawada photography, professional photo services">
+    <meta name="author" content="pixelpoetries photography">
+    <title>pixelpoetries</title>
+    <meta property="og:title" content="PixelPoetries Photography - Capturing Your Special Moments">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PixelPoetries Photography">
+    <meta property="og:url" content="https://www.pixelpoetriesphotography.com/">
+    <meta property="og:description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We offer creative and professional services to make your moments memorable.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+    <nav>
+        <div class="con">
+            <div class="con1">
+                <a href="index.html"><img src="logo.png" alt="Logo" height="100px" width="100px"></a>
+            </div>
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="gallery.html" class="dropdown-toggle">
+                        Gallery
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bridal.html">Bridal Portraits</a></li>
+                        <li><a href="#">Couple Portraits</a></li>
+                        <li><a href="#">Groom Portraits</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="book_us.html">Book Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="animated-gallery-container">
+        <div class="animated-gallery-grid" id="animated-gallery">
+            <!-- Images will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Modal for viewing image -->
+    <div class="image-modal" id="image-modal">
+        <button class="close-modal" id="close-modal">&times;</button>
+        <img id="modal-image" src="" alt="Full-size Image">
+    </div>
+    
+
+<section class="book-us">
+    <div class="containerss">
+        <div class="text-content">
+            <h2>BOOK US NOW</h2>
+            <p>Get in touch with us and let us make your special day an event of your lifetime using our digital eye.</p>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+91846400236" class="phone-number">+918464000236</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class=" p-4 text-center text-white">
+        <div class="footer-links">
+            <div class="footer-links1"> 
+                <h3 class="text-white font-bold mb-2">Quick Links</h3>
+                <ul class="text-white ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book_us.html">Book Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links2">
+                <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+                <p class="text-white">Where every pixel tells a poetic tale</p>
+                <p class="text-white"><b>Founder :</b>Pradeep Ganta</p>
+                <p class="text-white"><b>Address:</b> vijayawada, AP, India.</p>
+                <p class="text-white"><b>Email:</b>ganta.pixels@gmail.com</p>
+            </div>
+            <div class="footer-links1">
+                <h3 class="text-white font-bold mb-2">Social Links</h3>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/pixelpoetries_photography" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links3">
+            <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+            <p class="text-sm">used for visting our site and book now.</p>
+        </div>
+        <div id="copyright">
+            <p>&copy; Pixelpoetries. All rights reserved.</p>
+            <p style="font-size:12px;">Design & Developed by KDR Technologies</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/918464000236" class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram Icon -->
+   <a href="https://www.instagram.com/pixelpoetries_photography" class="instagram-icon" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+   </a>
+
+
+<script>
+   function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    
+// Array of image sources
+const animatedImageSources = [
+            "imgs/5/01.jpg",
+            "imgs/5/02.jpg",
+            "imgs/5/03.jpg",
+            "imgs/5/04.jpg",
+            "imgs/5/05.jpg",
+            "imgs/5/06.jpg",
+            "imgs/5/07.jpg",
+            "imgs/6/01.jpg",
+            "imgs/6/02.jpg",
+            "imgs/6/03.jpg",
+            "imgs/6/04.jpg",
+            "imgs/6/05.jpg",
+            "imgs/6/06.jpg",
+            "imgs/6/07.jpg"
+        ];
+
+        // Populate the gallery dynamically
+        const animatedGallery = document.getElementById('animated-gallery');
+        animatedImageSources.forEach((src) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = "Gallery Image";
+            img.addEventListener('click', () => openModal(src));
+            animatedGallery.appendChild(img);
+        });
+
+        // Modal functionality
+        const imageModal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        const closeModal = document.getElementById('close-modal');
+
+        function openModal(src) {
+            modalImage.src = src;
+            imageModal.style.display = 'flex';
+        }
+
+        closeModal.addEventListener('click', () => {
+            imageModal.style.display = 'none';
+        });
+
+        // Close modal on clicking outside the image
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                imageModal.style.display = 'none';
+            }
+        });
+
+        // Scroll Animation
+window.addEventListener("scroll", () => {
+    const galleryItems = document.querySelectorAll(".animated-gallery-grid img"); // Select all images
+    const triggerPoint = window.innerHeight * 0.8; // Set the trigger point to 80% of the viewport height
+
+    galleryItems.forEach((item) => {
+        const itemTop = item.getBoundingClientRect().top; // Get the distance from the top of the viewport
+
+        if (itemTop < triggerPoint) {
+            item.classList.add("visible"); // Add the visible class when item is in the viewport
+        }
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>

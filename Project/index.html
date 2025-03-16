@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We provide professional and creative services to capture your special moments with a unique artistic touch.">
+    <meta name="keywords" content="PixelPoetries Photography, pixelpoetries, photo shoots, wedding photography, cinematic photography, Vijayawada photography, professional photo services, all types of shoots">
+    <meta name="author" content="pixelpoetries photography">
+    <title>pixelpoetries</title>
+    <meta property="og:title" content="PixelPoetries Photography - Capturing Your Special Moments">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PixelPoetries Photography">
+    <meta property="og:url" content="https://www.pixelpoetriesphotography.com/">
+    <meta property="og:description" content="PixelPoetries Photography in Vijayawada specializes in wedding photography, all types of shoots, and cinematic productions. We offer creative and professional services to make your moments memorable.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10; 
+        }
+
+        /* GIF styling */
+        #loader img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Keeps the aspect ratio intact */
+    }
+        
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div id="loader">
+        <img src="ani logo.gif" alt="pixelpoetries">
+    </div>
+
+<!-- Navbar -->
+<nav>
+    <div class="con">
+        <div class="con1">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="90px" width="90px"></a>
+        </div>
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="gallery.html" class="dropdown-toggle">
+                    Gallery
+                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="bridal.html">Bridal Portraits</a></li>
+                    <li><a href="#">Couple Portraits</a></li>
+                    <li><a href="#">Groom Portraits</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book_us.html">Book Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section with Carousel -->
+<section class="carousel h-screen bg-gray-200" id="hero">
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="imgs/9/19.jpg" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imgs/9/9.jpg" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="imgs/9/49.jpg" alt="Slide 3">
+        </div>
+    </div>
+    <div class="container mx-auto flex justify-center items-end h-full absolute inset-0 pb-10" id="welcome-section">
+        <div class="text-center text-white px-4 md:px-0">
+            <h1 class="text-2xl md:text-3xl font-bold">Welcome to Pixelpoetries Photography </h1>
+            <a href="gallery.html" class="mt-8 inline-block bg-blue-600 text-white py-2 px-4 rounded">Explore now</a>
+        </div>
+    </div>
+    <!-- Manual Scroll Buttons -->
+    <button class="carousel-control-prev absolute top-1/2 left-4 transform -translate-y-1/2 text-white" onclick="prevItem()">&#10094;</button>
+    <button class="carousel-control-next absolute top-1/2 right-4 transform -translate-y-1/2 text-white" onclick="nextItem()">&#10095;</button>
+</section>
+
+
+   
+   
+    <section class="content">
+      <div class="con">
+        <div class="description">
+            <div class="hedding"><b>Wedding Photographers in Pixelpoetries</b></div>
+            <p>Finding the best Candid Wedding Photographers in vijayawada is no easy task,
+                which is why we, as a team of Wedding Photographer vijayawada offer you the 
+                best Wedding Photography Packages in Vijayawada. We’re a team of highly effective, 
+                creative,and best Candid Wedding Photographers in vjayawada. We understand the  
+                importance of special, raw, and real moments, and hence, our team believes in 
+                capturing the Wedding Photography in vijayawada with great expertise. With lots
+                of experience in Candid Wedding Photography vijayawada, our team makes sure to 
+                provide you with our best work, turning your special moments into unforgettable memories.
+           </p>    
+        </div>
+     </div>
+     <div class="form-container">
+        <h2>Your Details</h2>
+        <form action="/cli-reg" method="POST">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="phone">Phone <span>*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="event-date">Event Date</label>
+            <input type="date" id="eventdate" name="eventdate">
+    
+            <label for="event-location">Event Location</label>
+            <input type="text" id="eventlocation" name="eventlocation" required>
+
+            <button type="submit" onclick="eventbooking()">Submit Form</button>
+        </form>
+        </div>
+    </section>
+
+    <section class="gallery">
+            <div class="gal">
+                <div class="hedding">
+                    Wedding Photographers in Pixelpoetries
+                </div>
+                <p>Finding the best Candid Wedding Photographers in vijayawada is no easy task, 
+                    which is why we,as a team of Wedding Photographer vijayawada offer you the best 
+                    Wedding Photography Packages in Vijayawada.We’re a team of highly effective,
+                    creative, and best Candid Wedding Photographers in vjayawada. We understand the 
+                    importance of special, raw, and real moments, and hence, our team believes in 
+                    capturing the Wedding Photography in vijayawada with great expertise. With lots of 
+                    experience in Candid Wedding Photography vijayawada, our team makes sure to provide 
+                    you with our best work, turning your special moments into unforgettable memories.
+                </p>
+            </div>
+
+         <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="imgs/1.JPG" alt="Chinmaie + Amrud" onclick="">
+                <!--<button class="gallery-caption" style="border:1px solid pink; border-radius:4px;" type="submit" onclick="enquiry()">Chinmaie + Amrud</button>-->
+                <div class="gallery-caption">Chinmaie + Amrud</div onclick="">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/2.jpg" alt="Mayuri Naguleshwaran + Krishnaraj Muthukumar" onclick="">
+                <div class="gallery-caption">Mayuri Naguleshwaran + Krishnaraj Muthukumar</div onclick="">
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/3.JPG" alt="Dega Heshma Reddy + Ramireddy Mohith Kumar Reddy">
+                <div class="gallery-caption">Dega Heshma Reddy + Ramireddy Mohith Kumar Reddy</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/1.JPG" alt="Heshma Reddy + Ramireddy Mohith">
+                <div class="gallery-caption">Heshma Reddy + Ramireddy Mohith</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/3.JPG" alt="Sarmila Pandiyan + Shankara Narayanan">
+                <div class="gallery-caption">Sarmila Pandiyan + Shankara Narayanan</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/1.JPG" alt="Monica and Lokeswar Wedding Photography">
+                <div class="gallery-caption">Monica and Lokeswar Wedding Photography</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="horizontal-scroll">
+        <div class="scroll-wrapper">
+            <div class="scroll-container" id="scrollContainer">
+                <div class="scroll-content">
+                  <div class="scroll-item"><img src="imgs/2/02.jpg" alt="Portrait 1"></div>
+                    <div class="scroll-item"><img src="imgs/4/04.jpg" alt="Portrait 2"></div>
+                    <div class="scroll-item"><img src="imgs/5/06.jpg" alt="Portrait 3"></div>
+                    <div class="scroll-item"><img src="imgs/7/24.jpg" alt="Portrait 4"></div>
+                    <div class="scroll-item"><img src="imgs/2/04.jpg" alt="Portrait 5"></div>
+                    <div class="scroll-item"><img src="imgs/8/02.jpg" alt="Portrait 6"></div>
+                    <div class="scroll-item"><img src="imgs/2/01.jpg" alt="Portrait 7"></div>
+                    <div class="scroll-item"><img src="imgs/7/25.jpg" alt="Portrait 8"></div>
+                    <div class="scroll-item"><img src="imgs/4/06.jpg" alt="Portrait 9"></div>
+                    <div class="scroll-item"><img src="imgs/7/27.jpg" alt="Portrait 10"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-arrow left" onclick="scrollLeft()">&#8592;</div>
+        <div class="scroll-arrow right" onclick="scrollRight()">&#8594;</div>
+    </section>
+
+
+
+ <!-- Contact Section -->
+   <section class="py-8 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <!--<h2 class="text-2xl font-bold text-center mb-8">Client Reviews</h2>-->
+        <div id="review-box" 
+             class="p-8 rounded shadow text-center max-w-lg mx-auto">
+            <!-- Single review will be displayed here -->
+        </div>
+    </div>
+</section>
+
+<section class="py-8 bg-gray-100">
+    <div class="container mx-auto px-4" id="contact">
+        <h2 class="review">Submit Your Review</h2>
+        <form id="contactForm" class="max-w-xl mx-auto bg-white p-8 rounded shadow">
+            <div class="mb-4">
+                <label for="Name">Name</label>
+                <input type="text" id="name" name="Name" class="w-full border border-gray-300 p-2 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="Message">Your Review</label>
+                <textarea id="Message" rows="4" name="Message" class="w-full border border-gray-300 p-2 rounded" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded">Submit Review</button>
+        </form>
+        <p id="responseMessage" class="text-center mt-4 text-green-600"></p>
+    </div>
+</section>
+
+
+<section class="book-us">
+    <div class="containerss">
+        <div class="text-content">
+            <h2>BOOK US NOW</h2>
+            <p>Get in touch with us and let us make your special day an event of your lifetime using our digital eye.</p>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+91846400236" class="phone-number">+918464000236</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class=" p-4 text-center text-white">
+        <div class="footer-links">
+            <div class="footer-links1"> 
+                <h3 class="text-white font-bold mb-2">Quick Links</h3>
+                <ul class="text-white ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book_us.html">Book Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links2">
+                <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+                <p class="text-white">Where every pixel tells a poetic tale</p>
+                <p class="text-white"><b>Founder :</b>Pradeep Ganta</p>
+                <p class="text-white"><b>Address:</b> vijayawada, AP, India.</p>
+                <p class="text-white"><b>Email:</b>ganta.pixels@gmail.com</p>
+            </div>
+            <div class="footer-links1">
+                <h3 class="text-white font-bold mb-2">Social Links</h3>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/pixelpoetries_photography" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links3">
+            <h3 class="text-white font-bold mb-2">About Pixelpoetries</h3>
+            <p class="text-sm">used for visting our site and book now.</p>
+        </div>
+        <div id="copyright">
+            <p>&copy; Pixelpoetries. All rights reserved.</p>
+            <p style="font-size:12px;">Design & Developed by KDR Technologies</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/918464000236" class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram Icon -->
+   <a href="https://www.instagram.com/pixelpoetries_photography" class="instagram-icon" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+   </a>
+
+
+   <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+
+        // Start a timer for 3 seconds
+        setTimeout(() => {
+              isTimeoutFinished = true;
+              hideLoader();
+          }, 3000);
+  
+          // When the page fully loads, set isPageLoaded to true and try to hide loader
+          window.addEventListener("load", function() {
+              isPageLoaded = true;
+              hideLoader();
+          });
+
+
+        // Carousel functionality
+        // Existing carousel functionality
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+function showItem(index) {
+    const newIndex = index % totalItems;
+    document.querySelector('.carousel-inner').style.transform = `translateX(-${newIndex * 100}%)`;
+    currentIndex = newIndex;
+}
+
+function autoScroll() {
+    showItem(currentIndex + 1);
+}
+setInterval(autoScroll,6000);
+
+// Manual Scroll Functions
+function nextItem() {
+    showItem(currentIndex + 1);
+}
+
+function prevItem() {
+    showItem(currentIndex - 1);
+}
+
+// Visit counter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    let visitCount = localStorage.getItem('visitCount') || 0;
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount);
+    document.getElementById('visit-count').innerText = visitCount;
+});
+
+// Loader handling
+let isPageLoaded = false;
+let isTimeoutFinished = false;
+  
+function hideLoader() {
+    if (isPageLoaded && isTimeoutFinished) {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        document.body.style.overflow = "auto"; // Enable scrolling
+    }
+}
+
+
+        function enquiry(){
+            window.location.href='1.html';
+        }
+        function enquiry1(){
+            window.location.href='gallery.html';
+        }
+
+        //AUTO SCROLL IMGES AND MANUAL
+        document.addEventListener("DOMContentLoaded", function () {
+    const scrollWrapper = document.querySelector(".scroll-wrapper");
+    const scrollContent = document.querySelector(".scroll-content");
+
+    // Duplicate content for infinite loop
+    scrollContent.innerHTML += scrollContent.innerHTML;
+
+    let isScrolling = false;
+    let scrollSpeed = 1;
+    let isDown = false;
+    let startX, scrollLeft;
+
+    function autoScroll() {
+        if (!isScrolling) {
+            if (scrollWrapper.scrollLeft >= scrollContent.scrollWidth / 2) {
+                scrollWrapper.scrollLeft = 0;
+            } else {
+                scrollWrapper.scrollLeft += scrollSpeed;
+            }
+        }
+        requestAnimationFrame(autoScroll);
+    }
+
+    // Pause auto-scroll when user interacts
+    scrollWrapper.addEventListener("mouseenter", () => (isScrolling = true));
+    scrollWrapper.addEventListener("mouseleave", () => (isScrolling = false));
+
+    // Manual scroll (Mouse Drag)
+    scrollWrapper.addEventListener("mousedown", (e) => {
+        isDown = true;
+        scrollWrapper.classList.add("active");
+        startX = e.pageX - scrollWrapper.offsetLeft;
+        scrollLeft = scrollWrapper.scrollLeft;
+    });
+
+    scrollWrapper.addEventListener("mouseleave", () => isDown = false);
+    scrollWrapper.addEventListener("mouseup", () => isDown = false);
+
+    scrollWrapper.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollWrapper.offsetLeft;
+        const walk = (x - startX) * 2;
+        scrollWrapper.scrollLeft = scrollLeft - walk;
+    });
+
+    // Manual scroll (Touch Drag)
+    scrollWrapper.addEventListener("touchstart", (e) => {
+        isScrolling = true;
+        isDown = true;
+        startX = e.touches[0].pageX - scrollWrapper.offsetLeft;
+        scrollLeft = scrollWrapper.scrollLeft;
+    });
+
+    scrollWrapper.addEventListener("touchend", () => {
+        isDown = false;
+        isScrolling = false;
+    });
+
+    scrollWrapper.addEventListener("touchmove", (e) => {
+        if (!isDown) return;
+        const x = e.touches[0].pageX - scrollWrapper.offsetLeft;
+        const walk = (x - startX) * 2;
+        scrollWrapper.scrollLeft = scrollLeft - walk;
+    });
+
+    autoScroll();
+});
+
+// Get scroll-wrapper element
+const scrollWrapper = document.querySelector(".scroll-wrapper");
+
+// Function for Right Arrow Scroll
+function scrollRight() {
+    scrollWrapper.scrollBy({
+        left: 200, // Scroll 200px to the right
+        behavior: "smooth" // Smooth scrolling
+    });
+}
+
+// Function for Left Arrow Scroll
+function scrollLeft() {
+    scrollWrapper.scrollBy({
+        left: -200, // Scroll 200px to the left
+        behavior: "smooth" // Smooth scrolling
+    });
+}
+
+
+        //review Script
+        const contactForm = document.getElementById('contactForm');
+    const responseMessage = document.getElementById('responseMessage');
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        // Gather form data
+        const formData = new URLSearchParams(new FormData(contactForm));
+
+        try {
+            const response = await fetch('/rev-info', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: formData,
+            });
+
+            if (response.ok) {
+                responseMessage.textContent = "Thank you for your review!";
+                contactForm.reset(); // Clear the form fields
+            } else {
+                responseMessage.textContent = "Error submitting your review. Please try again.";
+                responseMessage.classList.add('text-red-600');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            responseMessage.textContent = "Error submitting your review. Please try again.";
+            responseMessage.classList.add('text-red-600');
+        }
+    });
+        //review loading 
+        async function loadReviews() {
+          try {
+               const response = await fetch('/rev-info'); // Fetch reviews from the server
+              const reviews = await response.json();
+
+            // Sort reviews by most recent (assuming they're returned in the original order of insertion)
+            const sortedReviews = reviews.sort((a, b) => {
+               // Sort by MongoDB's `_id` field for recent-first order
+                return b._id.localeCompare(a._id); // Newer `_id` will appear first
+              });
+
+             // Start the carousel with sorted reviews
+             startReviewCarousel(sortedReviews);
+            } catch (error) {
+              console.error('Error loading reviews:', error);
+           }
+        }
+
+            // Function for auto-scrolling reviews
+            function startReviewCarousel(reviews) {
+            const reviewBox = document.getElementById('review-box');
+            let currentIndex = 0;
+
+            function displayReview(index) {
+            const review = reviews[index];
+            reviewBox.innerHTML = `
+            <h3 class="font-bold text-lg">${review.cliName}</h3>
+            <p class="text-gray-600 mt-4">${review.message}</p>
+           `;
+        }
+
+        // Display the first review initially
+         displayReview(currentIndex);
+
+        // Cycle through reviews automatically
+         setInterval(() => {
+         currentIndex = (currentIndex + 1) % reviews.length; // Move to the next review
+         displayReview(currentIndex);
+        }, 2000); // Change review every 2 seconds
+     }
+
+      // Load reviews when the page loads
+      document.addEventListener('DOMContentLoaded', loadReviews);
+
+</script>
+</body>
+</html>
